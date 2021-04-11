@@ -22,18 +22,23 @@
   </head>
 <body>
   <header id= "header">
-    <img src="images/logo_new.png" alt="logo" id = "logo">
     <div class="navigation-wrap">
-      <div id="menu-options">
+    <img src="images/logo_new-removebg.png" alt="logo" id = "logo">
+    <h2> About Me!</h3>
+
+
+      <div class="menu-button w-nav-button"><img src="images/menu-icon_1menu-icon.png" width="22" id = "side" alt="icon" onclick="showDiv()"></div>
+      </div>
+      <div id="menu-options" >
         <nav role="navigation" class="navigation-item w-nav-menu">
-          <a href="index.html" class="navigation-item w-nav-link">Main</a>
+          <a href="index.html" class="navigation-item w-nav-link">Portfolio</a>
           <a href="project-2.html" class="navigation-item w-nav-link">Malaria Work</a>
           <a href="project-1.html" class="navigation-item w-nav-link">Spanish Flu</a>
         </nav>
     </div>
-      <div class="menu-button w-nav-button"><img src="images/menu-icon_1menu-icon.png" width="22" id = "side" alt="icon" onclick="showDiv()"></div>
-    </div>
+
 </header>
+<main>
   <div >
     <div >
       <div class="w-layout-grid about-intro-grid">
@@ -52,12 +57,12 @@
           <h2>Cities</h2>
           <p class="paragraph-light">Growing up in six different cities is a privilege it opens your eyes to the magic of human networks. Each city taught me and pushed me to be better</p>
         <div id="city-container" >
-            <div class="service-name-text">Ann Arbor<strong> 🇺🇸</strong></div>
-            <div class="service-name-text">Seattle <strong>🇺🇸</strong> </div>
-            <div class="service-name-text">Doha <strong>🇶🇦</strong></div>
-            <div class="service-name-text">Hyderabad <strong>🇮🇳</strong></div>
-            <div class="service-name-text">Chennai <strong>🇮🇳</strong></div>
-            <div class="service-name-text">Baripada <strong>🇮🇳</strong></div>
+            <div class="city-name">Ann Arbor<strong> 🇺🇸</strong></div>
+            <div class="city-name">Seattle <strong>🇺🇸</strong> </div>
+            <div class="city-name">Doha <strong>🇶🇦</strong></div>
+            <div class="city-name">Hyderabad <strong>🇮🇳</strong></div>
+            <div class="city-name">Chennai <strong>🇮🇳</strong></div>
+            <div class="city-name">Baripada <strong>🇮🇳</strong></div>
           </div>
       </div>
       <div class="books">
@@ -65,33 +70,34 @@
           <h2>Reading</h2>
           <div class="paragraph-light cc-position-name">Books are love, Books are life. Here are my favorite books of all time </div>
         </div>
-        <ul role="list" class="w-list-unstyled">
-          <li class="featured-item-wrap">
+
+        <div id = "listbooks">
+          <div class="book-container">
             <div class="speaking-text">Home Deus</div>
             <p>It describes how us humanity is likely to make a significant attempt to gain happiness, immortality, and God-like powers.</p>
             <img src="images/39704901._SY475_.jpg" loading="lazy" alt="Homo Deus" class="image">
-          </li>
-          <li class="featured-item-wrap">
+          </div>
+          <div class="book-container">
             <div class="speaking-text">Zero to One </div>
             <p>It taught me that  the process of creating something radically new and taking it to the next step </p><img src="images/91AWmg7WVKL.jpg" loading="lazy"  alt="">
-          </li>
-          <li class="featured-item-wrap">
+          </div>
+          <div class="book-container">
             <div class="speaking-text">Black Swan</div>
             <p>Black swan is a book about extreme impact of rare and unpredictable outlier events. The Corona-virus epidemic reminded me of this book</p><img src="images/41fAGV3AE-L.jpg" loading="lazy" alt="">
-          </li>
-          <li class="featured-item-wrap">
+          </div>
+          <div class="book-container">
             <div class="speaking-text">Accidental Prime Minister </div>
             <p>Accidental Prime Minister is a book about ex PM Manmohan Singh and the kind of control he had over the cabinet and the country</p><img src="images/917AA4p-a0L.jpg" loading="lazy"  alt="">
-          </li>
-          <li class="featured-item-wrap">
+          </div>
+          <div class="book-container">
             <div class="speaking-text">Plato Republic </div>
             <p>&quot;The Republic is a Socratic dialogue, authored by Plato around 375 BC, concerning justice, the order and character of the just city-state, and the just man.&quot; - Wiki</p><img src="images/9780140455113_p0_v1_s1200x630.jpg" loading="lazy" alt="">
-          </li>
-          <li class="featured-item-wrap">
+          </div>
+          <div class="book-container">
             <div class="speaking-text">Antifragile</div>
             <p>I loved the word antifragile as it clearly expressed the meaning of the phrase &quot;what doesn&#x27;t kill you makes you stronger&quot;</p><img src="images/71PB16riDXL.jpg" loading="lazy"  alt="">
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div >
@@ -101,12 +107,14 @@
     </div>
   </div>
   <div >
-    <div class="books">
+    <div class="books" id = "other-books">
       <img src="images/71bPzpxKDXL.jpg"   alt="">
       <img src="images/51GtTMTpNmL._SX331_BO1204203200_.jpg"  alt="">
       <img src="images/51oXKWrcYYL.jpg" alt="">
       <img src="images/715SWZzcslL.jpg" alt=""></div>
   </div>
+</main>
+<footer>
   <div class="section cc-contact">
     <div >
       <div class="contact">
@@ -126,7 +134,7 @@
       </div>
     </div>
   </div>
-    <footer class="footer-links">
+    <div class="footer-links">
       <a href="https://www.facebook.com/saitheintellectual/">
         <img alt="facebook" src="images/fb.png" class="footer-img">
       </a>
@@ -134,8 +142,9 @@
         <img alt="twitter" src="images/23931.png" class="footer-img">
       </a>
       <a href="https://www.instagram.com/saisam_sur/" >
-        <img alt="twitter" src="images/insta.png" class="footer-img">
+        <img alt="insta" src="images/insta.png" class="footer-img">
       </a>
-    </footer>
+    </div>
+  </footer>
   </body>
 </html>
